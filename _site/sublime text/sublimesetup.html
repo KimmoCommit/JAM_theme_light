@@ -33,7 +33,7 @@ function goBack()
   		<img src="/assets/img/user13.svg" />
   		KimmoCommit</div></li></a>
 
-  	<a  href="https://github.com/KimmoCommit/tree/gh-pages/_posts" target="_blank"> <li><div class="kansio-puu-merkki-main"> 
+  	<a  href="http://prose.io/#KimmoCommit/tree/gh-pages/_posts" target="_blank"> <li><div class="kansio-puu-merkki-main"> 
   		<img src="/assets/img/pencil41.svg" />
   		Post Management</div></li></a>
 
@@ -46,7 +46,7 @@ function goBack()
   		About</div></li></a>
 
   </div>
-
+  <div class="jakaja"></div>
       <a href="/index.html"><li><div class="kansio-puu-merkki-main"><img style="float:left;width:20px;height:auto;" src="/assets/img/home63.svg" /> Home</div></li></a>
       <a onclick="goBack()"><li><div class="kansio-puu-merkki"><img style="float:left;width:20px;height:auto;" src="/assets/img/back1.svg" /> Back</div></li></a>
    </ul>
@@ -54,29 +54,29 @@ function goBack()
 </div>   
 <div class="kolumni-10-tablet">
 
-         <!-- <div class="polku-rivi">
+        <div class="polku-rivi">
         
               <div class="polku-osa">Sublime Text</div>
 
               
-            </div>-->
-            <div class="teksti-kontti">
-              <div class="teksti-otsikko"> :: Sublimen Packet Managerin asennus ja käyttö ::  </div>
-              <div class="kolumni-12-tablet teksti-sisalto">
-                <h4 id="1_asenna_pakettienhallinta_sublimeen">1. Asenna pakettienhallinta Sublimeen</h4>
+                 <div class="polku-osa">Sublimen Packet Managerin asennus ja käyttö.md</div>
+            </div>
+      
+              <div class="kolumni-12-tablet">
+                <h4 id="asenna-pakettienhallinta-sublimeen">1. Asenna pakettienhallinta Sublimeen</h4>
 
-<p>Mene konsoliin <strong>(View-&gt;Show Console)</strong>, ja aja alla oleva asennuskoodi.</p>
-
-<pre><code>
+<p>Mene konsoliin <strong>(View-&gt;Show Console)</strong>, ja aja alla oleva asennuskoodi.
+<code>
 import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation') 
-</code></pre>
+</code></p>
 
-<h4 id="2_kynnist_sublime_text_uudestaan_ja_avaa_package_manager">2. Käynnistä Sublime Text uudestaan ja avaa Package Manager</h4>
+<h4 id="kynnist-sublime-text-uudestaan-ja-avaa-package-manager">2. Käynnistä Sublime Text uudestaan ja avaa Package Manager</h4>
 
-<p>Avaa komentopaletti näppäinyhdistelmällä <strong>Ctrl-Shift-P</strong> (Windows ja Linux) ja kirjoita <strong>Package Control</strong>. Paletissa näkyyn nyt vaihtoehtoja, joita voit valita. Halutessasi voit nyt asentaa uusia paketteja valitsemalla <strong>Install Package</strong>, jonka jälkeen voit hakea haluamiasi paketteja ladattavaksi, kuten syntaksien väritunnisteita jne.</p>
+<p>Avaa komentopaletti näppäinyhdistelmällä <strong>Ctrl-Shift-P</strong> (Windows ja Linux) ja kirjoita <strong>Package Control</strong>.
+Paletissa näkyyn nyt vaihtoehtoja, joita voit valita. Halutessasi voit nyt asentaa uusia paketteja valitsemalla <strong>Install Package</strong>, jonka jälkeen voit hakea haluamiasi paketteja ladattavaksi, kuten syntaksien väritunnisteita jne.</p>
 
 <blockquote>
-<p>Pääset nopeasti lataamaan paketteja Ctrl-Shift-P näppäinyhdistelmän jälkeen kirjoittamalla vain “install”</p>
+  <p>Pääset nopeasti lataamaan paketteja Ctrl-Shift-P näppäinyhdistelmän jälkeen kirjoittamalla vain “install”</p>
 </blockquote>
 
 <h4 id="lhteet">Lähteet</h4>
@@ -84,8 +84,9 @@ import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4b
 <p>1.<a href="http://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-package-control/">Hyvä englanninkielinen Sublime Package Manager asennus- ja käyttöohje</a></p>
 
 <p>2.<a href="https://sublime.wbond.net/installation#st2">Sublime Text 2 asennuskoodi</a></p>
+
               </div>
-            </div>
+        
           </div>
 
 

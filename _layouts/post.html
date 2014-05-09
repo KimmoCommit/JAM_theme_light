@@ -19,19 +19,19 @@ function goBack()
 </div>   
 <div class="kolumni-10-tablet">
 
-         <!-- <div class="polku-rivi">
+        <div class="polku-rivi">
         
               <div class="polku-osa">{{ page.category }}</div>
 
               {% if page.subcategory != null %}
-              <div class="polku-osa">{{page.subcategory}}</div>
+              <div class="polku-osa">{{ page.subcategory }}</div>
               {% endif %}
-            </div>-->
-            <div class="teksti-kontti">
-              <div class="teksti-otsikko"> :: {{ page.title }} ::  </div>
-              <div class="kolumni-12-tablet teksti-sisalto">
+                 <div class="polku-osa">{{ page.title }}.md</div>
+            </div>
+      
+              <div class="kolumni-12-tablet">
                 {{ content }}
               </div>
-            </div>
+        
           </div>
 

@@ -2,13 +2,7 @@
 title: Home
 layout: default
 ---
-<div class="kolumni-2-tablet">
-  <div class="kansio-puu">
-    <ul class="kansio-puu-ul">
-      {% include puu-paa-linkit.html %}
-    </ul>
-  </div>
-</div>
+{% include kansio-puu.html %}
 <div class="kolumni-10-tablet paa-kontti">
   <div class="polku-rivi">
     <div class="polku"><div class="polku-osa"></div></div>
@@ -67,12 +61,18 @@ layout: default
       <td>Title</td><td>  Words </td><td> Date </td>
     </tr>
     {% if post.title != null and post.subcategory  != null %}
-    <tr>
+    
+
+      <tr>  
+          
       <td class="tiedosto-otsikko-td"><a href="{{ site.baseurl }}{{ post.url }}"><img style="float:left;" src="assets/img/document9.svg" /> <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
       <td> {{ post.content | number_of_words }} </td>
       <td> {{ post.date | date: "%d-%m-%Y" }} </td>
+
     </tr>
+
     {% endif %}
+ 
   </table>
 </div>
 </div>
@@ -81,5 +81,6 @@ layout: default
 {% endfor %}
 {% endunless %}
 {% endfor %}
+
 </div>
 
