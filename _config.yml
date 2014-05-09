@@ -21,6 +21,11 @@ prose:
           element: "text"
           label: "Kategoria"
           value: ""
+      - name: "subcategory"
+        field:
+          element: "text"
+          label: "Alikategoria"
+          value: ""
       - name: "title"
         field:
           element: "text"
