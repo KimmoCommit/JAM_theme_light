@@ -1,0 +1,45 @@
+---
+title: Favourites
+layout: default
+---
+<script>
+function goBack()
+{
+  window.history.back()
+}
+</script>
+<div class="kolumni-2-tablet">
+  <div class="kansio-puu">
+    <ul class="kansio-puu-ul">
+      {% include puu-paa-linkit.html %}
+      {% include home-back-linkit.html %}
+    </ul>
+  </div>
+</div>   
+<div class="kolumni-10-tablet paa-kontti">
+  <div class="polku-rivi">
+    <div class="polku1"><div class="polku-osa">Favourites</div></div>
+  </div>
+  <div class="kansio-kontti" style="display:block;">
+    <div class="kansio-sisalto">
+      <table>
+        <tr class="ensi-rivi">
+          <td>Title</td><td>  Words </td><td> Date </td>
+        </tr>
+        {% for category in site.categories %}
+        {% for posts in category %}
+        {% for post in posts %}
+        {% if post.title != null and post.favourite != null %}
+        <tr>
+          <td class="tiedosto-otsikko-td"> <a href="{{ site.baseurl }}{{ post.url }}"><img style="float:left;" src="assets/img/document9.svg" />
+            <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
+            <td> {{ post.content | number_of_words }} </td>
+            <td> {{ post.date | date: "%d-%m-%Y" }} </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+          {% endfor %}  
+        </table>
+      </div>
+    </div>
