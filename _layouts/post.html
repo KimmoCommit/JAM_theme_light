@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<script>
+function goBack()
+{
+  window.history.back()
+}
+</script>
+<!--<p class="meta">{{ page.date | date_to_string }}</p>-->
+<div class="kolumni-2-tablet">
+  <div class="kansio-puu">
+    <ul class="kansio-puu-ul">
+     {% include puu-paa-linkit.html %}
+     {% include home-back-linkit.html %}
+   </ul>
+ </div>
+</div>   
+<div class="kolumni-10-tablet">
+
+         <!-- <div class="polku-rivi">
+        
+              <div class="polku-osa">{{ page.category }}</div>
+
+              {% if page.subcategory != null %}
+              <div class="polku-osa">{{page.subcategory}}</div>
+              {% endif %}
+            </div>-->
+            <div class="teksti-kontti">
+              <div class="teksti-otsikko"> :: {{ page.title }} ::  </div>
+              <div class="kolumni-12-tablet teksti-sisalto">
+                {{ content }}
+              </div>
+            </div>
+          </div>
+
