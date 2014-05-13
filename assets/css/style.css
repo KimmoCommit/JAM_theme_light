@@ -206,24 +206,29 @@ body {
 }
 
 /* line 250, ../sass/style.scss */
-.polku-osa {
+.polku-osa, .polku-tiedosto-nimi {
   float: left;
   color: rgba(100, 100, 100, 0.9);
 }
 
 /* line 255, ../sass/style.scss */
-.polku-osa:after {
+.polku-osa:after, .polku-tiedosto-nimi:after {
   content: "/";
   color: rgba(100, 100, 100, 0.2);
   padding: 0 5px 0 5px;
 }
 
-/* line 263, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
+.polku-tiedosto-nimi:after {
+  content: "";
+}
+
+/* line 271, ../sass/style.scss */
 .alikansio-kategoria, .alikansio-otsikko {
   display: none;
 }
 
-/* line 271, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .teksti-otsikko {
   color: rgba(255, 255, 255, 0.2);
   border-bottom: none;
@@ -232,12 +237,12 @@ body {
   box-shadow: 1px 1px 1px 1px #afafaf;
 }
 
-/* line 282, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .teksti-kontti {
   padding: 15px 15px 0 15px;
 }
 
-/* line 286, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .teksti-sisalto {
   border-left: 1px solid rgba(100, 100, 100, 0.2);
   border-right: 1px solid rgba(100, 100, 100, 0.2);
@@ -247,27 +252,27 @@ body {
   min-height: 350px;
 }
 
-/* line 296, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .paa-kontti {
   background-color: white;
 }
 
-/* line 300, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .ensi-rivi {
   color: rgba(100, 100, 100, 0.9);
 }
 
-/* line 306, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .kansio-sisalto table td {
   padding: 2px 5px 2px 2px;
 }
 
-/* line 315, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 .kansio-sisalto tr {
   width: 100%;
 }
 
-/* line 321, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 .tiedosto-otsikko-td {
   height: auto;
   white-space: nowrap;
@@ -275,7 +280,7 @@ body {
   text-overflow: ellipsis;
   width: 100%;
 }
-/* line 327, ../sass/style.scss */
+/* line 335, ../sass/style.scss */
 .tiedosto-otsikko-td img {
   height: 100%;
   width: auto;
@@ -283,19 +288,19 @@ body {
   padding-right: 5px;
 }
 
-/* line 340, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .kansio-puu-paa-linkit {
   border-top: 1px solid #fafafa;
   padding-bottom: 5px;
 }
-/* line 344, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 .kansio-puu-paa-linkit img {
   height: 20px;
   width: auto;
   float: left;
 }
 
-/* line 353, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 .index-kontti {
   display: block;
   float: left;
@@ -303,12 +308,12 @@ body {
   min-height: 97%;
   width: 100%;
 }
-/* line 360, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .index-kontti .kolumni-4-tablet {
   float: left;
   width: 100%;
 }
-/* line 363, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 .index-kontti .kolumni-4-tablet img {
   border: 1px solid rgba(100, 100, 100, 0.2);
   float: left;
@@ -316,17 +321,17 @@ body {
   height: auto;
 }
 
-/* line 375, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .index-tiedot {
   padding: 5px;
   float: left;
 }
-/* line 378, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 .index-tiedot ul {
   list-style-type: none;
 }
 
-/* line 384, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 .kansio-puu-merkki-main {
   width: 100%;
   height: auto;
@@ -335,7 +340,7 @@ body {
   text-overflow: ellipsis;
 }
 
-/* line 395, ../sass/style.scss */
+/* line 403, ../sass/style.scss */
 code, pre {
   background-color: #F9F9F9;
   color: black;
@@ -343,24 +348,24 @@ code, pre {
   padding: 0 5px 0 5px;
 }
 
-/* line 403, ../sass/style.scss */
+/* line 411, ../sass/style.scss */
 pre {
   max-width: 99%;
 }
 
-/* line 409, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 .alikansio-puu-linkki {
   display: none;
   width: 100%;
   height: auto;
 }
 
-/* line 415, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 .ylikansio {
   width: 100%;
 }
 
-/* line 420, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
 .jakaja {
   height: 1px;
   width: 80%;

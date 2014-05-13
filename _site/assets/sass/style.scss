@@ -259,6 +259,14 @@ header {
 
 	}
 
+	.polku-tiedosto-nimi{
+		@extend .polku-osa;
+	}
+
+	.polku-tiedosto-nimi:after{
+		content:"";
+	}
+
 
 	.alikansio-kategoria {
 		display:none;
