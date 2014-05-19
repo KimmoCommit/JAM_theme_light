@@ -433,3 +433,28 @@ pre {
 	margin: 5px 0 5px 5%;
 }
 
+section {
+	border-bottom:none;
+}
+
+.viimeisimmat {
+
+
+	h6 {
+		font-size:90%;
+	
+	}
+
+	p {
+		font-size:90%;
+	}
+}
+
+.viimeisimmat-kontti {
+	float:left;
+	padding:5px;
+
+	h6 {
+		border-bottom:1px solid $raja-vari;
+	}
+}

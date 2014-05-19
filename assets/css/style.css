@@ -373,3 +373,27 @@ pre {
   border-radius: 65px 65px 65px 65px;
   margin: 5px 0 5px 5%;
 }
+
+/* line 436, ../sass/style.scss */
+section {
+  border-bottom: none;
+}
+
+/* line 443, ../sass/style.scss */
+.viimeisimmat h6 {
+  font-size: 90%;
+}
+/* line 448, ../sass/style.scss */
+.viimeisimmat p {
+  font-size: 90%;
+}
+
+/* line 453, ../sass/style.scss */
+.viimeisimmat-kontti {
+  float: left;
+  padding: 5px;
+}
+/* line 457, ../sass/style.scss */
+.viimeisimmat-kontti h6 {
+  border-bottom: 1px solid #f0f0f0;
+}
