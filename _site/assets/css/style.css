@@ -263,44 +263,44 @@ body {
 }
 
 /* line 314, ../sass/style.scss */
-.kansio-sisalto table td {
-  padding: 2px 5px 2px 2px;
-}
-
-/* line 323, ../sass/style.scss */
-.kansio-sisalto tr {
+.kansio-sisalto table {
   width: 100%;
+}
+/* line 317, ../sass/style.scss */
+.kansio-sisalto table img {
+  padding-right: 5px;
+}
+/* line 321, ../sass/style.scss */
+.kansio-sisalto table tr:not(.ensi-rivi):hover {
+  background-color: rgba(200, 200, 200, 0.08);
 }
 
 /* line 329, ../sass/style.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 333, ../sass/style.scss */
 .tiedosto-otsikko-td {
-  height: auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
-}
-/* line 335, ../sass/style.scss */
-.tiedosto-otsikko-td img {
-  height: 100%;
-  width: auto;
-  padding-top: 3px;
-  padding-right: 5px;
+  width: 80%;
 }
 
-/* line 348, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .kansio-puu-paa-linkit {
   border-top: 1px solid #fafafa;
   padding-bottom: 5px;
 }
-/* line 352, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .kansio-puu-paa-linkit img {
   height: 20px;
   width: auto;
   float: left;
 }
 
-/* line 361, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 .index-kontti {
   display: block;
   float: left;
@@ -308,12 +308,12 @@ body {
   min-height: 97%;
   width: 100%;
 }
-/* line 368, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .index-kontti .kolumni-4-tablet {
   float: left;
   width: 100%;
 }
-/* line 371, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 .index-kontti .kolumni-4-tablet img {
   border: 1px solid rgba(100, 100, 100, 0.2);
   float: left;
@@ -321,17 +321,17 @@ body {
   height: auto;
 }
 
-/* line 383, ../sass/style.scss */
+/* line 381, ../sass/style.scss */
 .index-tiedot {
   padding: 5px;
   float: left;
 }
-/* line 386, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .index-tiedot ul {
   list-style-type: none;
 }
 
-/* line 392, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .kansio-puu-merkki-main {
   width: 100%;
   height: auto;
@@ -340,7 +340,7 @@ body {
   text-overflow: ellipsis;
 }
 
-/* line 403, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 code, pre {
   background-color: #F9F9F9;
   color: black;
@@ -348,24 +348,24 @@ code, pre {
   padding: 0 5px 0 5px;
 }
 
-/* line 411, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 pre {
   max-width: 99%;
 }
 
-/* line 417, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 .alikansio-puu-linkki {
   display: none;
   width: 100%;
   height: auto;
 }
 
-/* line 423, ../sass/style.scss */
+/* line 421, ../sass/style.scss */
 .ylikansio {
   width: 100%;
 }
 
-/* line 428, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 .jakaja {
   height: 1px;
   width: 80%;
@@ -374,26 +374,26 @@ pre {
   margin: 5px 0 5px 5%;
 }
 
-/* line 436, ../sass/style.scss */
+/* line 434, ../sass/style.scss */
 section {
   border-bottom: none;
 }
 
-/* line 443, ../sass/style.scss */
+/* line 441, ../sass/style.scss */
 .viimeisimmat h6 {
   font-size: 90%;
 }
-/* line 448, ../sass/style.scss */
+/* line 446, ../sass/style.scss */
 .viimeisimmat p {
   font-size: 90%;
 }
 
-/* line 453, ../sass/style.scss */
+/* line 451, ../sass/style.scss */
 .viimeisimmat-kontti {
   float: left;
   padding: 5px;
 }
-/* line 457, ../sass/style.scss */
+/* line 455, ../sass/style.scss */
 .viimeisimmat-kontti h6 {
   border-bottom: 1px solid #f0f0f0;
 }

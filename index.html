@@ -45,7 +45,7 @@ layout: default
  <div class="kansio-sisalto">
   <table>
     <tr class="ensi-rivi">
-      <td>Title</td><td>  Words </td><td> Date </td>
+      <td>Title</td><td >  Words </td><td> Date </td>
     </tr>
     {% for posts in category %}
     {% for post in posts %}
@@ -53,8 +53,10 @@ layout: default
     <tr>
       <td class="tiedosto-otsikko-td"><a href="{{ site.baseurl }}{{ post.url }}"><img style="float:left;" src="assets/img/document9.svg" />
         <div class="kansio-sisalto-merkki">{{ post.title | camelcase }}</div></a></td>
-        <td> {{ post.content | number_of_words }} </td>
+  
+        <td > {{ post.content | number_of_words }} </td>
         <td> {{ post.date | date: "%Y-%m-%d" }} </td>
+
       </tr>
       {% endif %}
       {% endfor %}

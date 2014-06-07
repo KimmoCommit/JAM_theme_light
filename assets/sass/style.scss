@@ -40,44 +40,44 @@ header {
 	}
 
 	.kansio-puu {
-	width:100%;
-	margin:0 auto;
-	ul {
-		list-style-type: none;
+		width:100%;
+		margin:0 auto;
+		ul {
+			list-style-type: none;
+		}
+		a {
+			color:$text-color;
+		}
+		li {
+			margin-top:2px;
+		}
+
 	}
-	a {
+
+
+	.kansio-otsikko {
+		border-bottom:1px solid $puu-tausta - 100;
+		min-height:25px;
+		padding-left:3px;
 		color:$text-color;
+		display:none;
+
 	}
-	li {
-		margin-top:2px;
+
+	.kansio-puu-ylimerkki {
+		width: 100%;
+		height:auto;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		img{
+			margin-top:3px;
+			padding-right:5px;
+			height:100%;
+			width:auto;
+		}
 	}
-
-}
-
-
-.kansio-otsikko {
-	border-bottom:1px solid $puu-tausta - 100;
-	min-height:25px;
-	padding-left:3px;
-	color:$text-color;
-	display:none;
-
-}
-
-.kansio-puu-ylimerkki {
-	width: 100%;
-	height:auto;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-
-	img{
-		margin-top:3px;
-		padding-right:5px;
-		height:100%;
-		width:auto;
-	}
-}
 
 /*
 .kansio-puu-ylimerkki:before {
@@ -154,14 +154,14 @@ header {
 	color:white;
 
 
-	}
+}
 
 
-	html {
-		height:100%;
-	}
+html {
+	height:100%;
+}
 
-	body {
+body {
 		//background-color: white - 5;
 		font-family: 'Open Sans', 'sans-serif';
 		height:100%;
@@ -189,7 +189,7 @@ header {
 	.kolumni-2-tablet{
 		padding:0 0 0 3px;
 		//border-right:1px solid $puu-tausta - 200;
-	
+
 	}
 
 	.kolumni-10-tablet {
@@ -308,41 +308,39 @@ header {
 	.ensi-rivi {
 
 
-color:$text-color;
+		color:$text-color;
+	}
+
+	.kansio-sisalto table{ 
+		width:100%;
+
+		img{
+			padding-right:5px;
+		}
+
+		tr:not(.ensi-rivi):hover{
+			background-color:rgba(200,200,200,0.08);
+			
+		}
+
 }
 
-.kansio-sisalto table td {
-	padding: 2px 5px 2px 2px;
-	//border-bottom: 1px solid white - 20;
-	//color: $text-color;
 
-	
+.text-right{
+	text-align:right;
 }
-
-
-.kansio-sisalto tr {
-	width:100%;
-}
-
-	
 
 .tiedosto-otsikko-td {
-	height:auto;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	width:100%;
-	img {
-		height:100%;
-		width:auto;
-		padding-top:3px;
-		padding-right:5px;
-	}
-
+	width:80%;
 
 	
 
 }
+
+
 
 
 .kansio-puu-paa-linkit {
@@ -354,28 +352,28 @@ color:$text-color;
 		height:20px;
 		width:auto;
 		float:left;
-	
+
 	}
 }
 
- .index-kontti {
-display:block;
-float:left;
-background-color:$puu-tausta + 210;
-min-height:97%;
-width:100%;
+.index-kontti {
+	display:block;
+	float:left;
+	background-color:$puu-tausta + 210;
+	min-height:97%;
+	width:100%;
 
- .kolumni-4-tablet {
- 	float:left;
- 	width:100%;
-	img {
-		border:1px solid $main-color; 
+	.kolumni-4-tablet {
 		float:left;
-		width:150px;
-		height:auto;
-		
+		width:100%;
+		img {
+			border:1px solid $main-color; 
+			float:left;
+			width:150px;
+			height:auto;
+
+		}
 	}
- }
 
 
 }
@@ -401,10 +399,10 @@ width:100%;
 
 
 code {
-    background-color: #F9F9F9;
-    color: black;
-    line-height: 1.1em;
-    padding:0 5px 0 5px;
+	background-color: #F9F9F9;
+	color: black;
+	line-height: 1.1em;
+	padding:0 5px 0 5px;
 
 }
 
@@ -442,7 +440,7 @@ section {
 
 	h6 {
 		font-size:90%;
-	
+
 	}
 
 	p {
@@ -457,4 +455,10 @@ section {
 	h6 {
 		border-bottom:1px solid $raja-vari;
 	}
+}
+
+.kansio-sisalto-merkki{
+	//width:auto;
+	//height:20px;
+	//margin-right:100%;	
 }
