@@ -1,7 +1,8 @@
 ---
+layout: post
 title: Sublimen Packet Managerin asennus ja käyttö
 category: Sublime Text
-layout: post
+published: true
 ---
 
 ####1. Asenna pakettienhallinta Sublimeen
@@ -14,9 +15,7 @@ import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4b
 ####2. Käynnistä Sublime Text uudestaan ja avaa Package Manager
 
 Avaa komentopaletti näppäinyhdistelmällä **Ctrl-Shift-P** (Windows ja Linux) ja kirjoita **Package Control**.
-Paletissa näkyyn nyt vaihtoehtoja, joita voit valita. Halutessasi voit nyt asentaa uusia paketteja valitsemalla **Install Package**, jonka jälkeen voit hakea haluamiasi paketteja ladattavaksi, kuten syntaksien väritunnisteita jne.
-
-> Pääset nopeasti lataamaan paketteja Ctrl-Shift-P näppäinyhdistelmän jälkeen kirjoittamalla vain "install"
+Paletissa näkyyn nyt vaihtoehtoja, joita voit valita. Halutessasi voit nyt asentaa uusia paketteja valitsemalla **Install Package**, jonka jälkeen voit hakea haluamiasi paketteja ladattavaksi, kuten syntaksien väritunnisteita jne. Pääset nopeasti lataamaan paketteja Ctrl-Shift-P näppäinyhdistelmän jälkeen kirjoittamalla vain "install"
 
 
 ####Lähteet
